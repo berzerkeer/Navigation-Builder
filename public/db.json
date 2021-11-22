@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Menu001",
+    "Name": "Product management"
+  },
+  {
+    "id": "Menu002",
+    "Name": "User research",
+    "SubMenus": [
+      {
+        "id": "SubMenu001",
+        "Name": "Quantitative Research"
+      },
+      {
+        "id": "SubMenu002",
+        "Name": "Qualitative Research"
+      },
+      {
+        "id": "SubMenu003",
+        "Name": "Stakeholders interview"
+      },
+      {
+        "id": "SubMenu004",
+        "Name": "Numbers data source"
+      }
+    ]
+  },
+  {
+    "id": "Menu003",
+    "Name": "Engineering leads",
+    "SubMenus": [
+      {
+        "id": "SubMenu005",
+        "Name": "Cumulative Research"
+      },
+      {
+        "id": "SubMenu006",
+        "Name": "Lab Research"
+      },
+      {
+        "id": "SubMenu007",
+        "Name": "Technical interview"
+      },
+      {
+        "id": "SubMenu008",
+        "Name": "Process data source"
+      },
+      {
+        "id": "SubMenu009",
+        "Name": "Charts data source"
+      },
+      {
+        "id": "SubMenu00X",
+        "Name": "Reports data source"
+      }
+    ]
+  },
+  {
+    "id": "Menu004",
+    "Name": "Procurement sales"
+  }
+]

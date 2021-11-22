@@ -1,0 +1,447 @@
+/* background pattern */
+.appBody {
+  background: linear-gradient(90deg, #fff 20px, transparent 1%) center,
+    linear-gradient(#fff 20px, transparent 1%) center, #d2ddec;
+  background-size: 22px 22px;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Application Header */
+.appHeader {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(41, 45, 55, 0.16);
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionButtons .status {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: -0.1px;
+  color: #61656c;
+}
+
+.actionButtons .previewButton {
+  padding: 6px 25px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #0565ff;
+  margin-left: 16px;
+  border-style: none;
+  color: white;
+  font-family: poppins;
+  font-size: 14px;
+}
+
+/* Navigation Menu Container */
+
+.navContainer {
+  height: calc(100% - 125px);
+  background-color: transparent;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 48px;
+  overflow: auto;
+  scrollbar-color: #6e6edb #e2e2f8;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+/* scroll thumb color ; #6e6edb
+   scroll track color : #e2e2f8 */
+
+.navContainer::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+.navContainer::-webkit-scrollbar-track {
+  background-color: #e2e2f8;
+  border-radius: 6px;
+  background-clip: content-box;
+}
+
+.navContainer::-webkit-scrollbar-track:horizontal {
+  margin: 0 100px;
+}
+
+.navContainer::-webkit-scrollbar-thumb {
+  background-color: #6e6edb;
+  border-radius: 6px;
+}
+
+/* Navigation menu card item */
+
+.navCard {
+  width: 200px;
+  height: 48px;
+  border: 2px solid #e58dc9;
+  border-radius: 6px;
+  background-color: #fef2f9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navCard input,
+.navMenuName {
+  background: none;
+  outline: none;
+  border: none;
+  height: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  font-family: poppins;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Common Nav card menu item styles */
+
+.navCard input::placeholder,
+.navSubMenuCard input::placeholder {
+  color: rgba(15, 3, 11, 0.2);
+}
+
+.navCardContent {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+}
+
+.navInputIcon {
+  margin-right: 4px;
+}
+
+/* Navigation submenu card item */
+.subDropContainer {
+  height: 4px;
+  background-color: #a6b6cc;
+  width: 180px;
+  margin: 8px 0px 8px 15px;
+  border-radius: 8px;
+}
+
+.navSubMenuCard {
+  width: 180px;
+  height: 40px;
+  border: 2px solid #a8a8e9;
+  border-radius: 6px;
+  background-color: #f5f5fe;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.navSubMenuCard .navMenuName {
+  width: 140px;
+  height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: -0.1px;
+  color: #161658;
+}
+
+/* Nav Submenu card tree style */
+
+.subMenu::before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #a8a8e9;
+  height: calc(100% - 85px);
+  left: 15px;
+  top: 7px;
+}
+
+.subMenu::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #a8a8e9;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  left: 12px;
+}
+
+/* .navSubMenuCard::before {
+  content: ' ';
+  position: absolute;
+  height: 12px;
+  width: 33px;
+  border-radius: 0 0 0 50px;
+  box-shadow: -1px 2px 0 0 #a8a8e9;
+  left: 15px;
+  background-color: transparent;
+} */
+
+/* .navSubMenuCard::before { / WORKS FLAWLESLLY ON CHROME BUT NOT ON FIREFOX BECAUSE FF FOR SOME REASON NEED BOTTOM BORDER COLOR
+  c  content: ' ';
+  position: absolute;
+  width: 22px;
+  height: 10px;
+  border: solid 2px #a8a8e9;
+  border-color: transparent transparent transparent #a8a8e9;
+  left: 3.5px;
+  border-radius: 0;
+  border-bottom-left-radius: 27px;
+} */
+
+.navSubMenuCard::before {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #a8a8e9;
+  border-radius: 50%;
+  left: 27px;
+  margin-top: 16px;
+}
+
+.navSubMenuCard::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 13px;
+  border: solid 2px #a8a8e9;
+  border-color: transparent transparent #a8a8e9 #a8a8e9;
+  left: 15px;
+  border-radius: 0;
+  border-bottom-left-radius: 14px;
+}
+
+/* Nav Items Container */
+
+.navItemsContainer {
+  padding: 15px;
+}
+
+.navCardMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navCardMenu .addSubMenu {
+  margin-left: 0 !important;
+}
+
+.navCardMenu .subMenu {
+  height: 100px;
+  visibility: visible;
+}
+
+/* .navCardMenu .subMenu::before {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #a8a8e9;
+  height: calc(100% - 72px);
+  left: 15px;
+} */
+
+.subMenu::before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #a8a8e9;
+  height: calc(100% - 81px);
+  left: 15px;
+}
+
+.navCardMenu .navSubMenuCard {
+  display: none;
+}
+
+.navCardMenu .subMenu::before {
+  left: 4px;
+}
+
+.navCardSubMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 1px;
+}
+
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navcard add submenu item */
+
+.addSubMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addSubMenuIcon {
+  margin-right: 6px;
+}
+
+.navCardSubMenu .addSubMenu {
+  /* margin-left: 50px; */
+}
+
+.addSubMenuLabel {
+  background: #e2e2f8;
+  padding: 2px 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #161658;
+  width: 100px;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+/* Navcard add menu item */
+
+.addMenuIcon {
+  margin-left: 20px;
+}
+
+.hidePlus {
+  visibility: hidden;
+}
+
+/* Drag & Drop Styles */
+
+.dragClass {
+  opacity: 0.75;
+}
+
+.dragClass::before {
+  content: none;
+}
+
+.dragClass::after {
+  content: none;
+}
+
+.dropClass {
+  background: #eef3f9;
+  border: 2px solid #a6b6cc;
+  border-style: dashed;
+  border-radius: 8px;
+}
+
+.subMenuDropClass {
+  background: #eef3f9;
+  border: 2px solid #a6b6cc;
+  border-style: dashed;
+  border-radius: 8px;
+  height: 40px;
+  width: 180px;
+  margin-left: 32px;
+  margin-top: 20px;
+}
+
+.subMenuDropClass::before {
+  content: " ";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #a8a8e9;
+  border-radius: 50%;
+  left: 20px;
+  margin-top: 13px;
+}
+
+.subMenuDropClass::after {
+  content: " ";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  border: dashed 2px #a8a8e9;
+  border-color: transparent transparent #a8a8e9 #a8a8e9;
+  left: 3.5px;
+  border-radius: 0;
+  border-bottom-left-radius: 14px;
+}
+
+.navCardSubMenu .showMenu {
+  display: block;
+  visibility: hidden;
+  height: 50px;
+}
+
+.subMenuPlaceholder {
+  display: block;
+  height: 80px;
+}
+
+.subMenuPlaceholder::before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #a8a8e9;
+  height: calc(100% - 190px);
+  left: 4px;
+}
+
+.dropMenu {
+  height: 1px;
+}
+
+.addSpace {
+  margin-top: 30px;
+}
+
+.increase .smooth-dnd-container {
+  width: 200px !important;
+}
+
+.hide {
+  display: none;
+}
+
+.navCardDragging {
+  border-radius: 6px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  border: dashed 1.5px #0565ff;
+  background-color: #ebf4ff;
+}
+
+.subMenuIcon,
+.mainMenuIcon {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.subMenuIcon:active,
+.mainMenuIcon:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
