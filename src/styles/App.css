@@ -225,7 +225,7 @@
   width: 10px;
   height: 15px;
   border: solid 2px #a8a8e9;
-  border-color: transparent transparent #a8a8e9 transparent;
+  border-color: transparent transparent #a8a8e9 #a8a8e9;
   left: 15px;
   border-radius: 0;
   border-bottom-left-radius: 34px;
