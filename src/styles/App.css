@@ -1,7 +1,6 @@
 /* background pattern */
 .appBody {
-  background: linear-gradient(90deg, #fff 20px, transparent 1%) center,
-    linear-gradient(#fff 20px, transparent 1%) center, #d2ddec;
+  background: linear-gradient(90deg, #fff 20px, transparent 1%) center, linear-gradient(#fff 20px, transparent 1%) center, #d2ddec;
   background-size: 22px 22px;
   height: 100vh;
   width: 100vw;
@@ -168,7 +167,7 @@
 /* Nav Submenu card tree style */
 
 .subMenu::before {
-  content: "";
+  content: '';
   position: absolute;
   border-left: 2px solid #a8a8e9;
   height: calc(100% - 85px);
@@ -177,7 +176,7 @@
 }
 
 .subMenu::after {
-  content: "";
+  content: '';
   position: absolute;
   border: 2px solid #a8a8e9;
   height: 4px;
@@ -210,7 +209,7 @@
 } */
 
 .navSubMenuCard::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 4px;
   height: 4px;
@@ -221,15 +220,15 @@
 }
 
 .navSubMenuCard::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 10px;
-  height: 13px;
+  height: 15px;
   border: solid 2px #a8a8e9;
-  border-color: transparent transparent #a8a8e9 #a8a8e9;
+  border-color: transparent transparent #a8a8e9 transparent;
   left: 15px;
   border-radius: 0;
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 34px;
 }
 
 /* Nav Items Container */
@@ -262,7 +261,7 @@
 } */
 
 .subMenu::before {
-  content: "";
+  content: '';
   position: absolute;
   border-left: 2px solid #a8a8e9;
   height: calc(100% - 81px);
@@ -367,7 +366,7 @@
 }
 
 .subMenuDropClass::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 4px;
   height: 4px;
@@ -378,7 +377,7 @@
 }
 
 .subMenuDropClass::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 15px;
   height: 13px;
@@ -401,7 +400,7 @@
 }
 
 .subMenuPlaceholder::before {
-  content: "";
+  content: '';
   position: absolute;
   border-left: 2px solid #a8a8e9;
   height: calc(100% - 190px);
